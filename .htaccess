@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+  # Activar RewriteEngine
+    RewriteEngine on
+
+  # Políticas de Privacidad & Cookies
+    RewriteRule ^politicas/(.+)/?$ index.php?typePolitics=$1 [NC,L]
+    
+</IfModule>
