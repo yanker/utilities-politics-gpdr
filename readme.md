@@ -16,17 +16,21 @@ This sample use bootstrap for base template.
 ### Installing
 
 * Download repository
-* Edit assets/plugins/politics/config for indicate data for your company
-* Add in htaccess url-friends for access politics
-```
-<IfModule mod_rewrite.c>
 
+* Edit assets/plugins/politics/config for indicate data for your company
+
+* Add in htaccess url-friends for access politics
+  
+  ```
+  <IfModule mod_rewrite.c>
+  
   # Activar RewriteEngine
     RewriteEngine on
-
+  
   # Políticas de Privacidad & Cookies
     RewriteRule ^politicas/(.+)/?$ index.php?typePolitics=$1 [NC,L]
-    
+  ```
+
 </IfModule>
 ```
 * Insert this code in page where you need politics (you can do function but it´s not necessary)
@@ -55,15 +59,18 @@ This sample use bootstrap for base template.
             ?>
         </p>
     <?php } ?>
+
 <!-- Insert in Page Politics Projects -->
+
 ```
 
 ## Version History
 
 * 1.0
-    * Initial Release (23/05/2023)
+  * Initial Release (23/05/2023)
 
 ## References
 
-Inspiration, code snippets, etc.
+nspiration, code snippets, etc.
+
 * [bootstrap](https://getbootstrap.com/)
